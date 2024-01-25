@@ -4,7 +4,7 @@ import Joi from "joi";
  */
 export interface NFC {
     message: string;
-    encryptionPublicKey: string;
+    encryptionPublicKey?: string;
     requiresAuthentication?: boolean;
 }
 export declare const NFC: Joi.ObjectSchema<NFC>;

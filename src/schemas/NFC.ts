@@ -12,6 +12,6 @@ export interface NFC {
 
 export const NFC = Joi.object<NFC>().keys({
 	message: Joi.string().required().max(64),
-	encryptionPublicKey: Joi.string().required(),
+	encryptionPublicKey: Joi.string(),
 	requiresAuthentication: Joi.boolean(),
 });
